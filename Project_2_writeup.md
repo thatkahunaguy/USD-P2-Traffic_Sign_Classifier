@@ -1,6 +1,5 @@
 #**Traffic Sign Recognition** 
-
-##Writeup Template
+#**John Glancy**
 
 ###You can use this file as a template for your writeup if you want to submit it as a markdown file, but feel free to use some other method and submit a pdf if you prefer.
 
@@ -36,7 +35,7 @@ The goals / steps of this project are the following:
 
 ####1. Provide a Writeup / README that includes all the rubric points and how you addressed each one. You can submit your writeup as markdown or pdf. You can use this template as a guide for writing the report. The submission includes the project code.
 
-You're reading it! and here is a link to my [project code](https://github.com/udacity/CarND-Traffic-Sign-Classifier-Project/blob/master/Traffic_Sign_Classifier.ipynb)
+You're reading it! and here is a link to my [project code](https://github.com/thatkahunaguy/USD-P2-Traffic_Sign_Classifier/Traffic_Sign_Classifier.ipynb)
 
 ###Data Set Summary & Exploration
 
@@ -44,13 +43,13 @@ You're reading it! and here is a link to my [project code](https://github.com/ud
 
 The code for this step is contained in the second code cell of the IPython notebook.  
 
-I used the pandas library to calculate summary statistics of the traffic
+I used python to calculate summary statistics of the traffic
 signs data set:
 
-* The size of training set is ?
-* The size of test set is ?
-* The shape of a traffic sign image is ?
-* The number of unique classes/labels in the data set is ?
+* The size of training set is 34799
+* The size of test set is 12630
+* The shape of a traffic sign image is (32, 32)
+* The number of unique classes/labels in the data set is 43
 
 ####2. Include an exploratory visualization of the dataset and identify where the code is in your code file.
 
@@ -66,30 +65,30 @@ Here is an exploratory visualization of the data set. It is a bar chart showing 
 
 The code for this step is contained in the fourth code cell of the IPython notebook.
 
-As a first step, I decided to convert the images to grayscale because ...
+As a first step, I decided to convert the images to grayscale as recommended in the Yann Lecunn paper.  I did this by using the Y channel only of a YUV conversion.  I also augmented the data by rotating images a random amount between +/- 15 degrees to generate additional data for the network and make it robust to rotation as recommended by Yann Lecun.  Lastly, I applied a histogram equalization to the image as recommended in the forums.
 
-Here is an example of a traffic sign image before and after grayscaling.
+Here is an example of a traffic sign image after grayscaling and histogram equalization.
 
-![alt text][image2]
+note: I'm shuffling images in the preprocessing routine so can't show original and grayscale - the "original" I show is actually just grayscale without the cmap set to grayscale
+![Grayscale][/writeup_images/grayscale.png]
 
-As a last step, I normalized the image data because ...
+As a last step, I normalized the image data to a mean of zero (-1 to 1) to improve convergence of the optimizer.
 
 ####2. Describe how, and identify where in your code, you set up training, validation and testing data. How much data was in each set? Explain what techniques were used to split the data into these sets. (OPTIONAL: As described in the "Stand Out Suggestions" part of the rubric, if you generated additional data for training, describe why you decided to generate additional data, how you generated the data, identify where in your code, and provide example images of the additional data)
 
-The code for splitting the data into training and validation sets is contained in the fifth code cell of the IPython notebook.  
+The example data provided contained a training, test and validation set so I did not need to split the data.
 
-To cross validate my model, I randomly split the training data into a training set and validation set. I did this by ...
+My final  augmented training set had 69598 number of images since I created one randomly rotated image for each existing image. My validation set and test set had 12630 and 4410 images respectively.
 
-My final training set had X number of images. My validation set and test set had Y and Z number of images.
+The fourth code cell of the IPython notebook contains the code for augmenting the data set with rotation as described previously in 1 above. 
 
-The sixth code cell of the IPython notebook contains the code for augmenting the data set. I decided to generate additional data because ... To add more data to the the data set, I used the following techniques because ... 
-
+TODO: generate and save both images
 Here is an example of an original image and an augmented image:
 
-![alt text][image3]
+![Grayscale][/writeup_images/grayscale.png]
 
-The difference between the original data set and the augmented data set is the following ... 
-
+The difference between the original data set and the augmented data set is that there is a rotated version of each of images in the original set in the augmented set. 
+TODO: continue from here
 
 ####3. Describe, and identify where in your code, what your final model architecture looks like including model type, layers, layer sizes, connectivity, etc.) Consider including a diagram and/or table describing the final model.
 
