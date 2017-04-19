@@ -156,36 +156,36 @@ was incorrectly identified as:
 >The code for making predictions on my final model is located in the 11th cell of the Ipython notebook.  With the exception of the first image, the model was fairly certain of it's predictions(2x or greater probability for the #1 prediction).  The final cell of the notebook prior to the optional step 4 contains the probabilities for each prediction, outlined below.
 
 The predictions for example 0  sign # 21 Double curve  were:
-   *probability:  26.31%  Right-of-way at the next intersection
-   *probability:  16.59%  Beware of ice/snow
-   *probability:  16.57%  Slippery road
-   *probability:  11.25%  Dangerous curve to the right
-   *probability:  10.58%  Children crossing
+   * probability:  26.31%  Right-of-way at the next intersection
+   * probability:  16.59%  Beware of ice/snow
+   * probability:  16.57%  Slippery road
+   * probability:  11.25%  Dangerous curve to the right
+   * probability:  10.58%  Children crossing
  
 The predictions for example 1  sign # 1 Speed limit (30km/h)  were:
-   *probability:  63.61%  Speed limit (30km/h)
-   *probability:  28.03%  Speed limit (50km/h)
-   *probability:  2.93%  Speed limit (80km/h)
-   *probability:  2.77%  End of speed limit (80km/h)
-   *probability:  0.85%  Speed limit (20km/h)
+   * probability:  63.61%  Speed limit (30km/h)
+   * probability:  28.03%  Speed limit (50km/h)
+   * probability:  2.93%  Speed limit (80km/h)
+   * probability:  2.77%  End of speed limit (80km/h)
+   * probability:  0.85%  Speed limit (20km/h)
  
 The predictions for example 2  sign # 8 Speed limit (120km/h)  were:
-   *probability:  83.27%  Speed limit (120km/h)
-   *probability:  15.20%  Speed limit (70km/h)
-   *probability:  0.91%  No vehicles
-   *probability:  0.26%  Speed limit (100km/h)
-   *probability:  0.16%  Speed limit (20km/h)
+   * probability:  83.27%  Speed limit (120km/h)
+   * probability:  15.20%  Speed limit (70km/h)
+   * probability:  0.91%  No vehicles
+   * probability:  0.26%  Speed limit (100km/h)
+   * probability:  0.16%  Speed limit (20km/h)
  
 The predictions for example 3  sign # 17 No entry  were:
-   *probability:  99.93%  No entry
-   *probability:  0.07%  Stop
-   *probability:  0.00%  Speed limit (120km/h)
-   *probability:  0.00%  Turn right ahead
-   *probability:  0.00%  Speed limit (20km/h)
+   * probability:  99.93%  No entry
+   * probability:  0.07%  Stop
+   * probability:  0.00%  Speed limit (120km/h)
+   * probability:  0.00%  Turn right ahead
+   * probability:  0.00%  Speed limit (20km/h)
  
 The predictions for example 4  sign # 28 Children crossing  were:
-   *probability:  65.62%  Children crossing
-   *probability:  14.68%  Dangerous curve to the right
-   *probability:  7.66%  Bicycles crossing
-   *probability:  3.54%  Road narrows on the right
-   *probability:  2.31%  Slippery road 
+   * probability:  65.62%  Children crossing
+   * probability:  14.68%  Dangerous curve to the right
+   * probability:  7.66%  Bicycles crossing
+   * probability:  3.54%  Road narrows on the right
+   * probability:  2.31%  Slippery road 
