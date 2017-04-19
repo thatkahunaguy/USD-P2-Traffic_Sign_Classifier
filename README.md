@@ -19,7 +19,7 @@ The goals / steps of this project are the following:
 [image1]: ./writeup_images/sign_samples.png "Sign Samples"
 [image2]: ./writeup_images/sign_frequency.png "Sign Frequency"
 [image3]: ./writeup_images/original_pp_images.png "Original, Preprocessed, & Augmented Images"
-[image4]: ./writeup_images/original_pp_images.png "New Signs to Test Model"
+[image4]: ./writeup_images/new_german_signs.png "New Signs to Test Model"
 
 
 ## Rubric Points
