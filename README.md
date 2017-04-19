@@ -14,6 +14,14 @@ The goals / steps of this project are the following:
 * Analyze the softmax probabilities of the new images
 * Summarize the results with a written report
 
+[//]: # (Image References)
+
+[image1]: ./writeup_images/sign_samples.png "Sign Samples"
+[image2]: ./writeup_images/sign_frequency.png "Sign Frequency"
+[image3]: ./writeup_images/original_pp_images.png "Original, Preprocessed, & Augmented Images"
+[image4]: ./writeup_images/original_pp_images.png "New Signs to Test Model"
+
+
 ## Rubric Points
  Here I will consider the [rubric points](https://review.udacity.com/#!/rubrics/481/view) individually and describe how I addressed each point in my implementation.  
 
@@ -44,8 +52,8 @@ signs data set:
 
 >Here is an exploratory visualization of the data set. There is a random sample of 25 of the sign images to provide an idea of what they are like.  I then sampled the frequency of images of each sign type as shown in the bar chart.  Note that certain type so signs have a very low number of examples.  I would expect the model will have a more difficult time predicting these signs since there is relatively little data to learn from.  One possible strategy I would attempt with more time would be to augment these low frequency signs more than the other signs with more examples.
 
-![Sample of sign images][./writeup_images/sign_samples.png]
-![Sign Frequency][./writeup_images/sign_frequency.png]
+![alt text][image1]
+![alt text][image2]
 
 ### Design and Test a Model Architecture
 
@@ -57,7 +65,7 @@ signs data set:
 
 >Here are some examples of traffic signs before and after grayscaling, rotation, & histogram equalization.
 
-![Original vs. Preprocessed images][./writeup_images/original_pp_images.png]
+![alt text][image3]
 
 >As a last step, I normalized the image data to a mean of zero (-1 to 1) to improve convergence of the optimizer.
 
@@ -119,7 +127,7 @@ The primary iteration and tuning was done around augmenting and preprocessing th
 
 >Here are five German traffic signs that I found on the web which were shown earlier to illustrate preprocessing:
 
-![New Images to test model][./writeup_images/original_pp_images.png]
+![alt text][image4]
 
 >The first image might be difficult to classify because because it has a very low number of samples in the training set.  The remainder of the images should be fairly easy to classify as they are well represented in the training set.
 
