@@ -129,7 +129,7 @@ The primary iteration and tuning was done around augmenting and preprocessing th
 
 ![alt text][image4]
 
->The first image might be difficult to classify because because it has a very low number of samples in the training set.  The remainder of the images should be fairly easy to classify as they are well represented in the training set.
+>The first image might be difficult to classify because because it has a very low number of samples in the training set.  The remainder of the images should be fairly easy to classify as they are well represented in the training set though similar signs such as the speed limit signs may present a challenge.
 
 **Point 2**: Discuss the model's predictions on these new traffic signs and compare the results to predicting on the test set. Identify where in your code predictions were made. At a minimum, discuss what the predictions were, the accuracy on these new predictions, and compare the accuracy to the accuracy on the test set (OPTIONAL: Discuss the results in more detail as described in the "Stand Out Suggestions" part of the rubric).
 
@@ -143,7 +143,7 @@ The primary iteration and tuning was done around augmenting and preprocessing th
 | No entry	      		| No entry					 				    |
 | Children crossing		| Children crossing      						|
 
->For these 5 images the model correctly guessed 4 of the 5 traffic signs which is 80% accurate. This compares favorably to the accuracy on the test set of ...
+>For these 5 images the model correctly guessed 4 of the 5 traffic signs which is 80% accurate. This compares favorably to the accuracy on the test set of 93%
 The details of the incorrectly identified sign are shown in the thirteenth code cell  
 
 **Incorrect Identification # 1**
@@ -156,36 +156,36 @@ was incorrectly identified as:
 >The code for making predictions on my final model is located in the 11th cell of the Ipython notebook.  With the exception of the first image, the model was fairly certain of it's predictions(2x or greater probability for the #1 prediction).  The final cell of the notebook prior to the optional step 4 contains the probabilities for each prediction, outlined below.
 
 The predictions for example 0  sign # 21 Double curve  were:
-   probability:  26.31%  Right-of-way at the next intersection
-   probability:  16.59%  Beware of ice/snow
-   probability:  16.57%  Slippery road
-   probability:  11.25%  Dangerous curve to the right
-   probability:  10.58%  Children crossing
+   *probability:  26.31%  Right-of-way at the next intersection
+   *probability:  16.59%  Beware of ice/snow
+   *probability:  16.57%  Slippery road
+   *probability:  11.25%  Dangerous curve to the right
+   *probability:  10.58%  Children crossing
  
 The predictions for example 1  sign # 1 Speed limit (30km/h)  were:
-   probability:  63.61%  Speed limit (30km/h)
-   probability:  28.03%  Speed limit (50km/h)
-   probability:  2.93%  Speed limit (80km/h)
-   probability:  2.77%  End of speed limit (80km/h)
-   probability:  0.85%  Speed limit (20km/h)
+   *probability:  63.61%  Speed limit (30km/h)
+   *probability:  28.03%  Speed limit (50km/h)
+   *probability:  2.93%  Speed limit (80km/h)
+   *probability:  2.77%  End of speed limit (80km/h)
+   *probability:  0.85%  Speed limit (20km/h)
  
 The predictions for example 2  sign # 8 Speed limit (120km/h)  were:
-   probability:  83.27%  Speed limit (120km/h)
-   probability:  15.20%  Speed limit (70km/h)
-   probability:  0.91%  No vehicles
-   probability:  0.26%  Speed limit (100km/h)
-   probability:  0.16%  Speed limit (20km/h)
+   *probability:  83.27%  Speed limit (120km/h)
+   *probability:  15.20%  Speed limit (70km/h)
+   *probability:  0.91%  No vehicles
+   *probability:  0.26%  Speed limit (100km/h)
+   *probability:  0.16%  Speed limit (20km/h)
  
 The predictions for example 3  sign # 17 No entry  were:
-   probability:  99.93%  No entry
-   probability:  0.07%  Stop
-   probability:  0.00%  Speed limit (120km/h)
-   probability:  0.00%  Turn right ahead
-   probability:  0.00%  Speed limit (20km/h)
+   *probability:  99.93%  No entry
+   *probability:  0.07%  Stop
+   *probability:  0.00%  Speed limit (120km/h)
+   *probability:  0.00%  Turn right ahead
+   *probability:  0.00%  Speed limit (20km/h)
  
 The predictions for example 4  sign # 28 Children crossing  were:
-   probability:  65.62%  Children crossing
-   probability:  14.68%  Dangerous curve to the right
-   probability:  7.66%  Bicycles crossing
-   probability:  3.54%  Road narrows on the right
-   probability:  2.31%  Slippery road 
+   *probability:  65.62%  Children crossing
+   *probability:  14.68%  Dangerous curve to the right
+   *probability:  7.66%  Bicycles crossing
+   *probability:  3.54%  Road narrows on the right
+   *probability:  2.31%  Slippery road 
